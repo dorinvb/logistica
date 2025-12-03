@@ -1,0 +1,52 @@
+/* Fișier: transportatori/css/transportatori.css (CORECTAT PENTRU CAP DE TABEL FIX) */
+
+/* ---------------------------------------------------- */
+/* 1. STILURI PENTRU FIXAREA TITLULUI ȘI A CAPULUI DE TABEL */
+/* ---------------------------------------------------- */
+
+/* FIX: Titlul Paginii (Rămâne neschimbat, funcționează corect) */
+.sticky-title {
+    position: sticky;
+    top: 0; 
+    z-index: 10; 
+    background-color: #ffffff; 
+    padding: 20px 0 10px 0; 
+    margin: 0;
+    font-size: 1.8em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* COREȚIE CRITICĂ: Capul de Tabel Fixed */
+/* Folosim clasa aplicată pe THEAD */
+.fixed-header-container {
+    /* Menținem sticky, dar ajustăm top-ul la poziția sub titlu */
+    position: sticky; 
+    top: 60px; /* Poziția sub titlul fix */
+    z-index: 9; /* Sub titlu, dar peste rânduri */
+    background-color: #f4f4f4; 
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1); /* Umbră mai mică */
+}
+
+/* Asigurăm că celulele din header sunt vizibile */
+.fixed-header-container th { 
+    background-color: #004488; 
+    color: white; 
+    padding: 15px 15px;
+}
+
+/* ---------------------------------------------------- */
+/* 2. STILURI DE DIFERENȚIERE VIZUALĂ (OPȚIONAL) */
+/* ---------------------------------------------------- */
+
+/* Stil de hover al rândurilor, specific pentru acest modul */
+.table-row-container:hover {
+    background-color: #e8eaf6; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+}
+
+/* Stiluri pentru formular (pentru coerență) */
+.form-section-title {
+    background-color: #e9f5ff; 
+    color: #004488;
+    border-left: 4px solid #007bff;
+}

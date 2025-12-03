@@ -1,0 +1,56 @@
+<head>
+    <link rel="stylesheet" href="css/transportatori.css"> 
+</head>
+<div class="form-container">
+    <h1>Adaugă Transportator Nou</h1>
+    <p>Completați toate câmpurile necesare pentru a înregistra un nou partener logistic. Aceste date vor fi folosite pentru calculul scorului de performanță.</p>
+
+    <form action="proceseaza_adaugare.php" method="POST">
+        
+        <div class="form-section-title">Date Companie</div>
+        <div class="form-group">
+            <label for="nume_firma">Nume Firmă / Companie:</label>
+            <input type="text" id="nume_firma" name="nume_firma" required>
+        </div>
+        <div class="form-group">
+            <label for="cui">CUI / Cod Fiscal:</label>
+            <input type="text" id="cui" name="cui" required>
+        </div>
+        <div class="form-group">
+            <label for="adresa">Adresă Sediu:</label>
+            <input type="text" id="adresa" name="adresa">
+        </div>
+
+        <div class="form-section-title">Date Contact & Autentificare</div>
+        <div class="form-group">
+            <label for="email">Email (Login & Notificări):</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="telefon">Număr Telefon Contact:</label>
+            <input type="text" id="telefon" name="telefon">
+        </div>
+        <div class="form-group">
+            <label for="parola">Parolă Inițială:</label>
+            <input type="password" id="parola" name="parola" required>
+        </div>
+        
+        <div class="form-section-title">Capacitate Flotă & Scorul Inițial</div>
+        <div class="form-group">
+            <label for="camioane_total">Flotă, nr. Camioane TOTAL:</label>
+            <input type="number" id="camioane_total" name="camioane_total" min="1" required>
+        </div>
+        <div class="form-group">
+            <label for="camioane_adr">Flotă, nr. Camioane cu ADR (Număr:</label>
+            <input type="number" id="camioane_adr" name="camioane_adr" min="0" value="0">
+        </div>
+        <div class="form-group">
+            <label for="scor_initial">Scor inițial de Performanță (Default 100):</label>
+            <input type="number" id="scor_initial" name="scor_initial" min="0" max="100" value="100">
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn-primary">Înregistrează Transportator</button>
+        </div>
+    </form>
+</div>
