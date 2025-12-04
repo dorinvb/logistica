@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Logistica X | Manager</title>
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">Portal Logistica X</div>
+        <div class="user-info">
+            Bun venit Manager de transport 1 | <a href="login.html" class="logout-link">Deconectare</a>
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <div class="menu-section">
+            <a href="#" class="menu-link" id="main-link-transportatori" data-target="submenu-transportatori">Transportatori</a>
+            <a href="#" class="menu-link" id="main-link-expeditii" data-target="submenu-expeditii">Expediții</a>
+            <a href="#" class="menu-link">Produse</a>
+            <a href="#" class="menu-link">Clienți</a>
+            <a href="#" class="menu-link">Rapoarte</a>
+        </div>
+
+        <hr class="menu-divider">
+
+        <div id="submenu-transportatori" class="submenu-section">
+            <a href="transportatori/lista_transportatori.html" class="submenu-link submenu-active" data-main-link="transportatori">Lista Transportatori</a>
+            <a href="transportatori/adauga_transportator.html" class="submenu-link" data-main-link="transportatori">Adaugă Transportator</a>
+            <a href="transportatori/adauga_restrictii.html" class="submenu-link" data-main-link="transportatori">Adaugă Restricții</a>
+        </div>
+
+        <div id="submenu-expeditii" class="submenu-section">
+            <a href="expeditii/creare_expeditie.html" class="submenu-link" data-main-link="expeditii">Creare Expediție</a>
+            <a href="expeditii/licitatii_active.html" class="submenu-link" data-main-link="expeditii">Licitații Active</a>
+            <a href="expeditii/istoric_curse.html" class="submenu-link" data-main-link="expeditii">Istoric Curse</a>
+        </div>
+        
+    </nav>
+
+    <main class="content-area">
+        <iframe id="content-iframe" src="transportatori/lista_transportatori.html"></iframe>
+    </main>
+
+    <footer class="footer">
+        <p>Sistem Logistica Intern - &copy; 2025</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

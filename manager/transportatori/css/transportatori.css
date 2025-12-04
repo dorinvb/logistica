@@ -1,0 +1,47 @@
+/* Fișier: transportatori/css/transportatori.css */
+
+/* ---------------------------------------------------- */
+/* 1. STILURI PENTRU FIXAREA TITLULUI ȘI A CAPULUI DE TABEL */
+/* ---------------------------------------------------- */
+
+/* Fixează Titlul Paginii 'Lista Transportatorilor' */
+.sticky-title {
+    position: sticky;
+    top: 0; /* Fixează titlul chiar sub marginea de sus a iframe-ului */
+    z-index: 10; /* Mai sus decât capul de tabel */
+    background-color: #ffffff; /* Asigură că titlul acoperă ce e dedesubt */
+    padding: 20px 0 10px 0; /* Spațiere sus/jos */
+    margin: 0;
+    font-size: 1.8em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Ajustare: Capul de tabel să fie lipicios imediat sub titlu */
+/* Înălțimea titlului este de aprox. 60px cu padding-ul de mai sus */
+.fixed-header-container {
+    top: 60px; 
+    background-color: #f4f4f4; /* Fundalul zonei de conținut */
+}
+
+/* ---------------------------------------------------- */
+/* 2. STILURI DE DIFERENȚIERE VIZUALĂ (OPȚIONAL) */
+/* ---------------------------------------------------- */
+
+/* Culoare unică pentru Antetul Tabelului Transportatori */
+.fixed-header-container th { 
+    background-color: #004488; /* Albastru închis, dar diferit de cel global */
+}
+
+/* Stil de hover al rândurilor, specific pentru acest modul */
+.table-row-container:hover {
+    background-color: #e8eaf6; /* Albastru-violet foarte deschis la hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+}
+
+/* Stiluri pentru formular (Formularele din Transportatori) */
+.form-section-title {
+    /* Schimbă culoarea de bază a separatoarelor din formular */
+    background-color: #e9f5ff; /* Albastru deschis */
+    color: #004488;
+    border-left: 4px solid #007bff;
+}
